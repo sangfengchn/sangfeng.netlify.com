@@ -1,0 +1,76 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = "Sang Feng"
+theme = 'typo'
+
+[taxonomies]
+tag = 'tags'
+
+# Google analytics code
+googleAnalytics = "G-xxxxxxxxx"
+
+[params]
+# Meta description
+description = "A Tech Blog"
+
+# Appearance settings
+theme = 'auto'
+colorPalette = 'default'
+hideHeader = false
+
+# Intro on main page, content is markdown
+homeIntroTitle = 'Hi!'
+homeIntroContent = """
+Currently I am a doctoral student of State Key Laboratory of Cognitive Neuroscience and Learning, Beijing Normal University, working at the Center for Beijing Aging Brain Rejuvenation Initiative (BABRI) (PI: Prof. Jun Wang). \n
+I am interested in a range of topics, including brain imaging, computational modeling, brain organization, computational psychiatry, and brain development and aging.
+"""
+
+# footer
+homeShowFooter = true
+showFooter = true
+footerContent = "&copy; Sang Feng 2024"
+
+# Collection to display on home
+homeCollectionTitle = ''
+homeCollection = ''
+
+# Lists parameters
+paginationSize = 100
+listSummaries = true
+listDateFormat = '2 Jan 2006'
+
+# Breadcrumbs
+breadcrumbs = true
+
+# Social icons
+[[params.social]]
+name = "github"
+url = "https://github.com/sangfengchn"
+
+# Main menu pages
+[[params.menu]]
+name = "home"
+url = "/"
+
+[[params.menu]]
+name = "posts"
+url = "/posts"
+
+[[params.menu]]
+name = "about"
+url = "/about"
+
+# Syntax highligth on code blocks
+[markup]
+[markup.highlight]
+style = 'algol'
+
+# Giscus comments
+[params.giscus]
+enable = true
+repo = "sangfengchn/sangfeng.netlify.com"
+repoid = "R_kgDONFjnug"
+category = "Announcements"
+categoryid = "DIC_kwDONFjnus4CjrQG"
+mapping = "url"
+theme = "preferred_color_scheme"
